@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto Foto Delen</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em;
+        }
+        section {
+            margin: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+        }
+        .form-container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        input, textarea {
+            margin-bottom: 10px;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Auto Foto Delen</h1>
+    </header>
+
+    <section class="container form-container">
+        <h2>Deel jouw auto foto!</h2>
+        <form>
+            <label for="naam">Naam:</label>
+            <input type="text" id="naam" name="naam" required>
+
+            <label for="auto-model">Auto Model:</label>
+            <input type="text" id="auto-model" name="auto-model" required>
+
+            <label for="foto">Foto URL:</label>
+            <input type="url" id="foto" name="foto" required>
+
+            <label for="opmerkingen">Opmerkingen:</label>
+            <textarea id="opmerkingen" name="opmerkingen" rows="4"></textarea>
+
+            <button type="button" onclick="deelFoto()">Deel Foto</button>
+        </form>
+    </section>
+
+    <section class="container">
+        <h2>Recent gedeelde foto's</h2>
+        <!-- Hier kun je JavaScript gebruiken om dynamisch foto's weer te geven -->
+    </section>
+
+    <script>
+        function deelFoto() {
+            // Voeg hier JavaScript toe om de ingevoerde gegevens te verwerken en weer te geven
+        }
+    </script>
+</body>
+</html>
